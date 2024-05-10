@@ -7,11 +7,21 @@ const {
 } = require('ethers')
 const { ethers } = require('ethers')
 
+
+/**
+ * 定义provider
+ * 定义合约地址
+ * 定义abi接口
+ * 构造合约对象
+ * 调用合约对应abi方法
+ * 监听合约事件
+ */
+
 const provider = new ethers.JsonRpcProvider(
   'https://sepolia.infura.io/v3/185ac6ce977d4a828c4d4445ce0cd770'
 )
 
-const contract_addr = '0x423f6ebeFc7E7D2342390Fb6519618697BeA6E5D'
+const contract_addr = '0x6deFd7e108708019E99fF84e6B2731D27d39be68'
 const abi = [
   'event SumEvent(address indexed sender, uint256 num1, uint256 num2,uint256 sum)',
   'event Transfer(address indexed from, address indexed to, uint amount)'
